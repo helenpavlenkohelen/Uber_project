@@ -2,76 +2,110 @@ body
   font-family: 'Roboto', sans-serif
   font-style: normal
   
+@mixin btn
+  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+  border-radius: 4px
+  width: 172px
+  height: 46px
+  padding: 17px 20px
+  text-decoration: none
+  color: #fff
+  font-size: 14px
+
+/* nav */
 
 .nav
   background: #212121
   padding: 10px 0 0 0
   justify-content: spase-between 
-  &_list
-   margin-rigth: 10px
+
+  &__list
+   margin-right: 10px
    font-style: normal
    font-weight: 300
-    
-  &_link 
+
+  &__link 
     color: #fff
-    font-family: 'Roboto'
-    font-size: 14px
+    font-family: 'Roboto', sans-serif
+    font-size: 15px
     line-height: 15px
     display: flex
     align-items: center
-    
-   
+    padding: 7px 13px
+
+  &__list-item 
+    border-right: 1px dotted #000
+
+/* header */
 
 header
+  position: relative
   background: url("../img/uber_bg.jpg") no-repeat 
-  padding: 18px 18px 100px 18px
-
-  & .header-nav_link
-  padding: 18px 
-
-  & .header-nav_contact-uber
-  font-size: 13px
-  color: #fff
-  font-weight: 100
-
-
-  & .header-nav_contact-phone
-   font-size: 12px
-   font-weight: 300
-
-
-  & .header-nav_contact-nomber
-   color: #fff
-   font-size: 22px
-   text-decoration: none
+  padding: 0 18px 100px 18px
  
-  & .header-nav_contact
-   margin-bottom: 100px
-
    
   
 
-  & .header-nav_contact-button 
-   text-decoration: none
+.header__bg
+   background: rgba(0, 0, 0, .5)
+   width: 100%
+   position: absolute
+   height: 85px   
+
+.header-nav
+
+  &__link
+     padding: 18px 
+
+  &__contact-uber
+     font-size: 13px
+     color: #fff
+     font-weight: 100
 
 
-.header-info_uber
-  font-size: 57px
-  margin-bottom: 1rem
-
-.header-info_welcom 
-  font-size: 34px
-  margin-bottom: 2rem
-
-.header-info_company
-  font-size: 15px
-  margin-bottom: 100px
-
-.header-info_company-first
-   font-size: 15px
-   margin-bottom: 32px
+  &__contact-phone
+    color: #fff
+    font-size: 12px
+    font-weight: 300
 
 
+  &__contact-nomber
+     color: #fff
+     font-size: 22px
+     text-decoration: none
+ 
+  &__contact
+    padding-top: 16px
+    margin-bottom: 100px
+
+
+  &__contact-button 
+     text-decoration: none
+     @include btn
+
+ 
+.header-info
+  &__uber
+    font-size: 57px
+    margin-bottom: 1rem
+
+
+
+  &__welcom 
+    font-size: 34px
+    margin-bottom: 2rem
+
+
+  &__company
+    color: #fff
+    font-size: 15px
+    margin-bottom: 100px
+
+  &__company-first
+     color: #fff
+     font-size: 15px
+     margin-bottom: 32px
 
 
 .wrapper
@@ -82,20 +116,10 @@ header
     right: 0
 
 
-.button 
-  background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
-  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
-  border-radius: 4px
-  width: 172px
-  height: 46px
-  padding: 17px 20px
-  text-decoration: none
-  color: #fff
-
-
-
-.header-info_button
-  width: 300px
+.header-info__button
+  display: block
+  @include btn
+  
 
 
 .header-info 
@@ -104,3 +128,253 @@ header
     color: #fff
 
 
+/* main */
+
+main
+  padding: 18px 0 0 0
+
+  .button-black
+     display: block
+     background: #000
+     width: 113px
+     height: 34px
+     color: #fff
+     font-size: 11px
+     margin-bottom: 39px
+     margin: auto
+
+  .button-black>span
+    display: block
+    padding:  9px
+
+  .button-white>span
+    display: block
+    padding:  9px
+
+  .button-white
+    width: 140px
+    display: block
+    background: #fff
+    color: #000
+    margin-bottom: 25px
+    margin: auto
+
+  .main-info
+    &__tittle
+     display: block
+     margin-bottom: 25px
+     font-weight: 700
+     font-size: 38px
+
+    &__tittle-mobile
+       margin: 39px 0 10px 0
+       display: block
+       font-weight: 700
+       font-size: 38px
+
+    &__tittle-choice
+       color: #fff 
+       margin-top: 30px 
+    &__text-choice
+      margin-bottom: 54px
+      color: #fff 
+
+    &__text
+       margin-bottom: 30px
+
+.main-about
+  margin-bottom: 115px
+  &__item
+    color: #202020
+    margin-bottom: 25px
+    font-size: 17px
+    line-height: 21px
+
+  &__item-first
+    margin-bottom: 48px
+    font-weight: 400
+
+  &__item-second
+    margin-bottom: 25px
+
+  &__item-third
+    margin-bottom: 25px 
+
+  &__item-blue
+    color: #1EACC7
+    font-size: 15px 
+
+  &__icon
+    position: absolute
+
+  &__circle
+   width: 115px
+   height: 115px
+
+
+.main-img
+  padding-bottom: 77px
+  &__kard
+    background: url("../img/plas.jpg")
+    position: relative 
+    margin-bottom: 20px
+   
+  
+  &__info
+    position: absolute
+    color: #fff
+    top: 83px
+    font-size: 24px
+    margin-left: 10%
+
+  &__info-second
+     margin-left: 14% 
+  &__info-third
+     margin-left: 15% 
+  &__info-fourth
+     margin-left: 10% 
+  &__info-fifth
+     margin-left: 20%   
+  &__info-sixth
+      margin-left: 12%   
+
+  &__bot
+    position: absolute
+    top: 232px
+    left: 174px
+
+  &__plas
+    position: absolute
+    top: 238px
+    left: 181px
+    z-index: 5
+
+.main-choice
+  padding: 54px
+  height: 450px
+  background: #000
+
+  &__bottom
+    padding-top: 212px
+
+  &__bottom-text
+    margin-bottom: 205px
+
+  &__bottom-conditions
+    margin-bottom: 50px
+
+.main-list
+  &__row
+    padding-bottom: 90px
+  &__mg
+    margin-bottom: 60px
+
+  &__blue
+    margin-left: 35px
+    color: #1CA8C3
+    
+  &__red
+    margin-left: 35px
+    color: #FF5656
+
+  &__blue-item, &__red-item
+    margin-left: 85px
+    line-height: 1.7
+    position: relative
+
+  &__blue-item>li:before
+    content: ""
+    position: absolute
+    width: 21px
+    height: 20px
+    top: 3px 
+    left: -29px
+    background: url("/img/check_blue.jpg") 
+    
+  &__red-item>li:before
+    content: ""
+    position: absolute
+    width: 21px
+    height: 20px
+    top: 3px 
+    left: -29px
+    background: url("/img/check-red.jpg") 
+
+  &__tittle
+    font-size: 24px
+
+
+.main-world
+  background: url("/img/black.jpg")
+  height: 100%
+  position: relative
+
+  &:before
+    content: ""
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    background: url("/img/world_bg.jpg")
+
+  &____top-mr
+    height: 712px
+
+  &__top
+    padding: 46px 0 50px 0
+
+  &__top-city
+    color: #fff
+
+  &__top-link
+    color: #1FBAD6
+    margin-button: 50px
+
+
+/* footer */
+
+.footer-list
+  &__link
+    color: #999999
+
+.footer-nav
+  cursor: pointer
+  padding: 10px 0 40px 0
+
+  &__list
+    margin-top: 20px
+    font-size: 24px
+
+  &__link
+    color: #070716
+
+  &__link-google
+    padding-left: 24%
+
+  &__line
+    display: block  
+    margin: auto
+
+
+/* Extra Small Devices, Phones */
+
+@media all and (max-width : 480px) 
+
+.header-info
+  &__uber
+    font-weight: 900
+    font-size: 40px
+    margin-bottom: 1rem
+
+.header-nav__contact-button 
+    width: 105px
+    height: 22px
+    padding: 9px 9px
+    text-decoration: none
+    color: #fff
+    font-size: 14px
+
+
+    &__contact 
+      margin-bottom: 57px
