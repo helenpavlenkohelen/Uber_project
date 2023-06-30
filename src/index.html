@@ -19,10 +19,46 @@
 
 <body>
   <!-- nav -->
-   <section class="nav">
+  <section class="nav">
+
+   <nav class="navbar navbar-expand-lg  container navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+        <section class="nav">
+         <nav class="navbar-nav mr-auto container nav-height">
+          <ul class="row list-unstyled nav__list"> 
+           <li class="nav-item active col-xl col-xl-auto text-center align-self-center offset-xl-1 nav__list-item">
+            <a class="nav__link">Главная</a>
+           </li>
+           <li class="nav-item col-xl col-xl-auto text-center align-self-center nav__list-item">
+            <a class="nav__link">Со своим автомобилем</a>
+           </li>
+           <li class="nav-item col-xl col-xl-auto text-center align-self-center nav__list-item">
+            <a class="nav__link">На автомобиле компании</a>
+           </li>
+           <li class="nav-item col-xl col-xl-auto text-center align-self-center nav__list-item">
+            <a class="nav__link">Требования</a>
+           </li>
+           <li class="nav-item col-xl col-xl-auto text-center align-self-center">
+            <a class="nav__link">Контакты</a>
+           </li>
+           <li class="nav-item col-xl col-xl-auto text-center align-self-center">
+            <a class="nav__link">Оставить заявку</a>
+           </li>
+          </ul>
+         </nav>
+        </section>
+      </div>
+   </nav>
+
+<!-- 
     <nav class="container nav-height">
       <ul class="row list-unstyled nav__list"> 
-       <!-- <div class="row align-items-md-center">  -->
+        <div class="row align-items-md-center">  
          <li class="col-xl col-xl-auto text-center align-self-center offset-xl-1 nav__list-item">
           <a class="nav__link">Главная</a>
          </li>
@@ -43,22 +79,22 @@
          </li>
        </div>
       </ul>
-    </nav>
-   </section>
+    </nav> -->
+  </section>
 
    <!-- header -->
 
    <header>
       <section class="row header__bg">
-      </section>
-      <div class="container">
+      
+       <div class="container">
          <section class="row header-nav__contact">
-            <article class="col-xl-3 offset-xl-1 header-nav__contact-uber align-self-center">Официальный сайт Uber Украина
+            <article class="col-xl-3 offset-xl-1 d-xs-none d-sm-none d-md-block header-nav__contact-uber align-self-center">Официальный сайт Uber Украина
             </article>
-            <section class="col-xl-4 offset-xl-3 offset-xs-8">
+            <section class="col-xl-4 offset-xl-3 col-sm-4 offset-sm-8">
               <div class="row align-items-center">
                 <section class="col-xl align-self-center">
-                  <p class=" header-nav__contact-phone mb-xl-0">Звоните нам ежедневно</p>
+                  <p class=" header-nav__contact-phone mb-xl-0 d-xs-none d-md-block d-sm-none">Звоните нам ежедневно</p>
                   <a class=" header-nav__contact-nomber" href="tel:380992450345">380992450345</a>
                 </section>
                 <section class="col-xl col-xl-auto">
@@ -67,23 +103,21 @@
                   </a>
                 </section>
               </div>
-            </section>
-           
-         </section>
-         <section class="col-xl-12 header-info">
-          <div class="row row-cols-1 justify-content-xl-center">
+            </section> 
+          </section>
+       </div>
+      </section>
+      <div class="container header-info mt-5">
             <h1 class="col-xl-12 header-info__uber text-center">компания uber partners!</h1>
             <h2 class="col-xl-12 header-info__welcom text-center">приглашаем водителей! на своем авто!</h2>
-            <article class="col-xl-12 header-info__company-first d-xs-none  d-sm-none text-center">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди<br> 
+            <article class="col-xl-12 header-info__company-first d-md-block text-center d-sm-none">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди<br> 
             таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в <br>
             личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за <br>
             пиковое время.</article>
-            <article class="col-xl-12 header-info__company text-center">Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Киев.  Водители у нас <br>
+            <article class="col-xl-12 header-info__company text-center d-md-block d-sm-none">Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Киев.  Водители у нас <br>
             зарабатывают от 80000- 120000 в месяц.
             </article>
-            <a class="col-xl-3 header-info__button button text-center align-self-center text-uppercase" href="#">отправить заявку!</a>
-          </div>
-         </section>
+            <a class="col-xl-12 header-info__button button text-center align-self-center text-uppercase" href="#">отправить заявку!</a>
       </div>
    </header>
 
@@ -91,113 +125,141 @@
 
    <main>
     <section class="container">
-      <div class="row">
-        <section class="col-xl-12 main-about">
-          <div class="row"> 
+      <div class="row main-about">
+           <section class="col-xl-12 main-about__info">
+               <a class="text-uppercase text-center button-black center-block main-info__button" href="#"><span>преимущества</span></a>
+               <h2 class="main-info__tittle-mobile text-uppercase text-center">8 причин работать с нами</h2>
+            </section>
             <section class="col-xl-6">
-              <div class="row align-item-center justify-content-xs-center">
-                <img class="col-xl-3  main-about__circle-first main-about__circle align-self-center" src="/img/circle_1.png">
-                <section class="col-xl-9 align-self-center align-self-center ">
-                 <article class="main-about__item">
-                   <p><span class="main-about__item-blue">Никаких наличных, оплата происходит <br>автоматически</span><br>Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</p>
-                 </article>
+              <div class="row row-cols-1">
+                <section class="col">
+                  <div class="row main-about__section">
+                   <img class="col-xl-3 main-about__circle-first main-about__circle align-self-center" src="/img/circle_1.png">
+                   <section class="col-xl-9 align-self-center align-self-center ">
+                    <article class="main-about__item">
+                      <p><span class="main-about__item-blue">Никаких наличных, оплата происходит    <br>автоматически</span><br>Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</p>
+                    </article>
+                   </section>
+                  </div>
                 </section>
-                <img class="col-xl-3 main-about__circle-second main-about__circle align-self-center " src="/img/circle_2.png">
-                <section class="col-xl-9 align-self-center ">
-                 <article class="main-about__item">
-                    <p><span class="main-about__item-blue">Высокий доход с гарантированными<br> выплатами</span><br>Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</p>
-                 </article>
+                <section class="col">
+                  <div class="row main-about__section">
+                   <img class="col-xl-3 main-about__circle-second main-about__circle align-self-center " src="/img/circle_2.png">
+                   <section class="col-xl-9 align-self-center ">
+                    <article class="main-about__item">
+                       <p><span class="main-about__item-blue">Высокий доход с гарантированными<br> выплатами</span><br>Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</p>
+                    </article>
+                   </section>
+                  </div>
                 </section>
-                <img class="col-xl-3 main-about__circle-third main-about__circle align-self-center " src="/img/circle_3.png">
-                <section class="col-xl-9 align-self-center ">
-                  <article class="main-about__item">
-                    <p><span class="main-about__item-blue">Комфортное, прозрачное и простое<br>подключение</span><br>Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!</p>
-                  </article>
+                <section class="col">
+                  <div class="row main-about__section">
+                   <img class="col-xl-3 main-about__circle-third main-about__circle align-self-center " src="/img/circle_3.png">
+                   <section class="col-xl-9 align-self-center ">
+                     <article class="main-about__item">
+                       <p><span class="main-about__item-blue">Комфортное, прозрачное и простое<br>подключение</span><br>Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!</p>
+                     </article>
+                   </section>
+                  </div>
                 </section>
-                <img class="col-xl-3 main-about__circle-fourth main-about__circle align-self-center " src="/img/circle_4.png">
-                <section class="col-xl-9 align-self-center ">
-                  <article class="main-about__item">
-                    <p><span class="main-about__item-blue">Круглосуточная поддержка</span><br>В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</p>
-                  </article>
+                <section class="col">
+                  <div class="row main-about__section">
+                   <img class="col-xl-3 main-about__circle-fourth main-about__circle align-self-center " src="/img/circle_4.png">
+                   <section class="col-xl-9 align-self-center ">
+                     <article class="main-about__item">
+                       <p><span class="main-about__item-blue">Круглосуточная поддержка</span><br>В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</p>
+                     </article>
+                   </section>
                 </section>
               </div>
             </section>
+
             <section class="col-xl-6">
-             <div class="row i">
-               <img class="col-xl-3 main-about__circle-fifth main-about__circle align-self-center " src="/img/circle_8.png">
-               <section class="col-xl-9 align-self-center ">
-                  <article class="main-about__item-first">
-                    <p><span class="main-about__item-blue">Комиссия 8% + БОНУСЫ</span><br> У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</p>
-                  </article>
-               </section>
-               <img class="col-xl-3 main-about__circle-sixth main-about__circle align-self-center " src="/img/circle_7.png">
-               <section class="col-xl-9 align-self-center ">
-                  <article class="main-about__item-second">
-                    <p><span class="main-about__item-blue">Работа в удобное время, никаких<br>графиков</span><br>Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни! </p>
-                  </article>
-               </section>
-               <img class="col-xl-3 main-about__circle-seventh main-about__circle align-self-center " src="/img/circle_6.png">
-               <section class="col-xl-9 align-self-center ">
-                 <article class="main-about__item-third">
-                   <p><span class="main-about__item-blue">Всегда большое количество заказов</span><br>Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.</p>
-                 </article>
-               </section>
-               <img class="col-xl-3 main-about__circle-eighth main-about__circle align-self-center " src="/img/circle_5.png">
-               <section class="col-xl-9 align-self-center">
-                  <article class="main-about__item">
-                    <p><span class="main-about__item-blue">Без шашечек и наклеек</span><br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</p>
-                  </article>
-               </section>
+             <div class="row row-cols-1">
+              <section class="col lign-items-center">
+                <div class="row main-about__section">
+                  <img class="col-xl-3 main-about__circle-fifth main-about__circle align-self-center " src="/img/circle_8.png">
+                  <section class="col-xl-9 align-self-center ">
+                     <article class="main-about__item-first">
+                       <p><span class="main-about__item-blue">Комиссия 8% + БОНУСЫ</span><br> У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</p>
+                     </article>
+                  </section>
+                </div>
+              </section>
+              <section class="col">
+                <div class="row main-about__section">
+                  <img class="col-xl-3 main-about__circle-sixth main-about__circle align-self-center " src="/img/circle_7.png">
+                  <section class="col-xl-9 align-self-center ">
+                     <article class="main-about__item-second">
+                       <p><span class="main-about__item-blue">Работа в удобное время, никаких<br>графиков</span><br>Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни! </p>
+                     </article>
+                  </section>
+                </div>
+              </section>
+              <section class="col">
+                <div class="row main-about__section">
+                  <img class="col-xl-3 main-about__circle-seventh main-about__circle align-self-center " src="/img/circle_6.png">
+                  <section class="col-xl-9 align-self-center ">
+                    <article class="main-about__item-third">
+                      <p><span class="main-about__item-blue">Всегда большое количество заказов</span><br>Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.</p>
+                    </article>
+                  </section>
+                </div>
+              </section>
+              <section class="col">
+                <div class="row main-about__section">
+                  <img class="col-xl-3 main-about__circle-eighth main-about__circle align-self-center " src="/img/circle_5.png">
+                  <section class="col-xl-9 align-self-center">
+                     <article class="main-about__item">
+                       <p><span class="main-about__item-blue">Без шашечек и наклеек</span><br>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</p>
+                     </article>
+                  </section>
+                </div>
+              </section>
              </div>
             </section>
-          </div>
-        </section>
+      </div>
         <section class="col-xl-12 main-mobile">
           <div class="row">
            <section class="col-xl-12 main-info">
-             <a class="text-uppercase text-center button-black center-block main-info__button" href="#"><span>возможности</span></a>
+             <a class="text-uppercase text-center button-black center-block  align-self-center" href="#"><span>возможности</span></a>
              <h2 class="main-info__tittle-mobile text-uppercase text-center">мобильное приложение убер</h2>
              <p class="main-info__text text-uppercase text-center main-info__text">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</p>
            </section>
           </div>
         </section>
         <section class="col-xl-12 main-img">
-         <div class="row row-col-3">
-           <figure class="col-xl-4 main-img__first-img justify-content-xl-center  text-center">
-            <img class="main-img__kard img-fluid" src="./img/kard_1.jpg">
+         <div class="row justify-content-center">
+           <figure class="col main-img__first-img  main-img__kard img-fluid text-center">
             <img class="main-img__plas" src="./img/plas.jpg"> 
             <img class="main-img__bot" src="./img/buttom.png">
-            <figcaption class="main-img__info main-img__info-first text-uppercase align-self-center">оформление заказа<br>одним касанием</figcaption>
+            <p class="main-img__info main-img__info-first img-fluid text-uppercase align-self-center">оформление заказа<br>одним касанием</p>
            </figure>
-           <figure class="col-xl-4 main-img__first-img ustify-content-xl-center  text-center">
-            <img class="main-img__kard img-fluid" src="./img/kard_2.jpg">
+           <figure class="col main-img__second-img main-img__kard img-fluid ml-5 text-center">
             <img class="main-img__plas" src="./img/plas.jpg">
             <img class="main-img__bot" src="./img/buttom.png"> 
-            <figcaption class="main-img__info main-img__info-second text-uppercase">надежная подача</figcaption>
+            <p class="main-img__info main-img__info-second text-uppercase">надежная подача</p>
            </figure>
-           <figure class="col-xl-4 main-img__first-img ustify-content-xl-center  text-center">
-            <img class="main-img__kard img-fluid" src="./img/kard_3.jpg">
+           <figure class="col main-img__third-img main-img__kard img-fluid ml-5 text-center">
             <img class="main-img__plas" src="./img/plas.jpg">
             <img class="main-img__bot" src="./img/buttom.png">
-            <figcaption class="main-img__info main-img__info-third text-uppercase">прозрачные цены</figcaption>
+            <p class="main-img__info main-img__info-third text-uppercase">прозрачные цены</p>
            </figure>
-           <figure class="col-xl-4 main-img__first-img ustify-content-xl-center  text-center">
-            <img class="main-img__kard img-fluid" src="./img/kard_4.jpg">
+           <div class="w-100"></div>
+           <figure class="col main-img__fourth-img main-img__kard img-fluid text-center">
             <img class="main-img__plas" src="./img/plas.jpg">
              <img class="main-img__bot" src="./img/buttom.png"> 
-            <figcaption class="main-img__info main-img__info-fourth text-uppercase">безналичная оплата</figcaption>
+            <p class="main-img__info main-img__info-fourth text-uppercase">безналичная оплата</p>
            </figure>
-           <figure class="col-xl-4 main-img__first-img ustify-content-xl-center  text-center">
-            <img class="main-img__kard img-fluid" src="./img/kard_5.jpg">
+           <figure class="col main-img__fifth-img main-img__kard img-fluid ml-5 text-center">
             <img class="main-img__plas" src="./img/plas.jpg">
             <img class="main-img__bot" src="./img/buttom.png">
-            <figcaption class="main-img__info main-img__info-fifth text-uppercase">обратная связь</figcaption>
+            <p class="main-img__info main-img__info-fifth text-uppercase">обратная связь</p>
            </figure>
-           <figure class="col-xl-4 main-img__first-img ustify-content-xl-center  text-center">
-            <img class="main-img__kard img-fluid" src="./img/kard_6.jpg">
+           <figure class="col main-img__sixth-img main-img__kard img-fluid ml-5 text-center">
             <img class="main-img__plas" src="./img/plas.jpg">
             <img class="main-img__bot" src="./img/buttom.png">
-            <figcaption class="main-img__info main-img__info-sixth text-uppercase">разделитель<br>стоимости поездки</figcaption>
+            <p class="main-img__info main-img__info-sixth text-uppercase">разделитель<br>стоимости поездки</p>
            </figure>
          </div>
         </section>
@@ -205,25 +267,37 @@
     </section>
     <section class="main-choice">
       <div class="container">
-        <div class="row justify-content-xl-center">
+        <div class="row justify-content-center">
           <section class="col-xl-12 main-choice__top">
             <a class="text-uppercase text-center button-white center-block main-info__button" href="#"><span>возможности</span></a>
-            <h2 class="main-info__tittle-choice text-uppercase text-center">выбор отличная штука</h2>
-            <p class="main-info__text-choice text-uppercase text-center">закажите автомобиль который подходит по стилю и по бюджету</p>
+            <h2 class="main-info__tittle-choice text-uppercase text-center d-xs-none d-md-block d-sm-none">выбор отличная штука</h2>
+            <p class="main-info__text-choice text-uppercase text-center d-xs-none d-md-block d-sm-none">закажите автомобиль который подходит по стилю и по бюджету</p>
             <div class="row"> 
-              <img class="col-xl-8 offset-xl-2 center-block text-center" src="./img/cars1.png">
+              <img class="col-xl-12 center-block text-center" src="./img/cars1.png">
             </div>
           </section>
         </div>
       </div>
     </section>
-    <div class="container">
-      <div class="row">
+    <section class="main-choice__next">
+      <div class="container">
+       <div class="row">
         <section class="col-xl-12 main-choice__bottom">
           <article class="text-center main-choice__bottom-text">
             <p>Машины на каждый день.<br>
             Лучше, дешевле и быстрее, чем такси</p>
           </article>
+        </section>
+       </div>
+      </div>
+    </section>
+     <div class="container">
+      <div class="row">
+        <section class="col-xl-12 main-choice__bottom">
+          <!-- <article class="text-center main-choice__bottom-text">
+            <p>Машины на каждый день.<br>
+            Лучше, дешевле и быстрее, чем такси</p>
+          </article> -->
           <section class="main-choice__bottom-conditions">
              <a class="text-uppercase text-center button-black center-block main-info__button" href="#"><span>возможности</span></a>
              <h2 class="main-info__tittle-mobile text-uppercase text-center">условия и требования</h2>
@@ -282,10 +356,10 @@
          </div>
         </div>
       </div>
-    </div>
+     </div>
     <section class="main-world">
       <div class="container">
-       <div class="row main-world__top-mr justify-content-xl-space-between">
+       <div class="row main-world__top-mr justify-content-space-between">
          <section class="col-xl-12 main-world__top">
             <a class="text-uppercase text-center button-white center-block main-info__button" href="#"><span class="text-uppercase">города</span></a>
             <h2 class="main-info__tittle-choice text-uppercase text-center">по всему миру</h2>
@@ -300,43 +374,37 @@
   <!-- footer -->
 
   <footer class="footer-nav">
-    <section class="container-fluid">
-      <div class="row footer-nav__soc align-item-center">
-        <section class="col-xl-3 align-self-center">
-            <img class="" src="./img/fase.jpg">
-            <img class="" src="./img/tviter.jpg">
-            <img class="" src="./img/link.jpg">
-            <img class="" src="./img/insta.jpg">
-        </section>
-        <nav class="col-xl-6 align-self-center">
+    <section class="container">
+      <div class="row footer-nav__soc justify-content-center">
+        <nav class="col-xl-6 col-sm-12  align-self-center">
 
           <img class="footer-nav__line text-center" src="./img/line.png">
-          <ul class="row list-unstyled footer-nav__list center-block justify-content-xl-center"> 
-           <li class="col-xl col-xl-auto text-center  footer-nav__list-item">
+          <ul class="row list-unstyled footer-nav__list center-block justify-content-center"> 
+           <li class="col col-xl-auto text-center  footer-nav__list-item">
             <a class="footer-nav__link">на главную</a>
            </li>
-           <li class="col-xl col-xl-auto text-center footer-nav__list-item">
+           <li class="col col-xl-auto text-center footer-nav__list-item">
             <a class="footer-nav__link">города</a>
            </li>
-           <li class="col-xl col-xl-auto text-center footer-nav__list-item">
+           <li class="col col-xl-auto text-center footer-nav__list-item">
             <a class="footer-nav__link">для водителей</a>
            </li>
           </ul>
 
-          <ul class="row list-unstyled footer-nav__item center-block justify-content-xl-center"> 
-           <li class="col-xl col-xl-auto text-center align-self-center footer-list__link-item">
+          <ul class="row list-unstyled footer-nav__item center-block justify-content-center"> 
+           <li class="col col-xl-auto col-sm-auto text-center align-self-center footer-list__link-item">
             <a class="footer-list__link">центер поддержки</a>
            </li>
-           <li class="col-xl col-xl-auto text-center footer-list__link-item">
+           <li class="col col-xl-auto text-center footer-list__link-item">
             <a class="footer-list__link">вакансии</a>
            </li>
-           <li class="col-xl col-xl-auto text-center footer-list__link-item">
+           <li class="col col-xl-auto text-center footer-list__link-item">
             <a class="footer-list__link">разработчики</a>
            </li>
-           <li class="col-xl col-xl-auto text-center footer-list__link-item">
+           <li class="col col-xl-auto text-center footer-list__link-item">
             <a class="footer-list__link">блог</a>
            </li>
-           <li class="col-xl col-xl-auto text-center footer-list__link-item">
+           <li class="col col-xl-auto text-center footer-list__link-item">
             <a class="footer-list__link">о нас</a>
            </li>
           </ul>
@@ -346,13 +414,13 @@
           </div> 
         
         </nav> 
-        <section class="col-xl-3 align-self-center">
-          <img class="footer-nav__link-google" src="./img/link_foot.jpg"> 
-        </section>
-        <!-- </section> -->
-        
       </div>
     </section>
+    <section class="align-self-center footer-nav__soc-first"></section>
+    <section class="align-self-center footer-nav__soc-second"></section>
+    <section class="align-self-center footer-nav__soc-third"></section>
+    <section class="align-self-center footer-nav__soc-fourth"></section>
+
   </footer>
   
 
