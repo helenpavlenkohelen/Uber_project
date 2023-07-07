@@ -6,24 +6,31 @@ body
   background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
   border-radius: 4px
-  width: 172px
   height: 46px
   padding: 17px 20px
   text-decoration: none
   color: #fff
   font-size: 14px
 
+
+.navbar-light .navbar-toggler 
+  background: #fff
+
+.navbar 
+  padding: 0
+
 /* nav */
 
 .nav
   background: #212121
   padding: 10px 0 0 0
-  justify-content: spase-between 
+  flex-grow: 1
 
   &__list
    margin-right: 10px
    font-style: normal
    font-weight: 300
+   width: 100%
 
   &__link 
     color: #fff
@@ -40,16 +47,14 @@ body
 /* header */
 
 header
-  position: relative
   background: url("../img/uber_bg.jpg") no-repeat 
-  padding: 0 18px 100px 18px
+  padding-bottom: 100px 
  
    
   
 
 .header__bg
    background: rgba(0, 0, 0, .5)
-   width: 100%
    height: 85px   
 
 .header-nav
@@ -75,7 +80,8 @@ header
      text-decoration: none
  
   &__contact
-    padding-top: 16px
+    
+    height: 85px
    
 
   &__contact-button 
@@ -160,6 +166,11 @@ main
     margin: auto
 
   .main-info
+    &__car
+      position: absolute
+      top: 50%
+      left: 0%
+
     &__tittle
      display: block
      margin-bottom: 25px
@@ -168,15 +179,15 @@ main
 
     &__tittle-mobile
        margin: 39px 0 27px 0
-       display: block
        font-weight: 700
        font-size: 38px
 
     &__tittle-choice
        color: #fff 
        margin-top: 30px 
+
     &__text-choice
-      margin-bottom: 54px
+      margin-bottom: 321px
       color: #fff 
 
     &__text
@@ -202,12 +213,16 @@ main
     position: absolute
 
   &__circle
-   width: 115px
-   height: 115px
+   width: 66%
+   height: 66%
 
 
 .main-img
   padding-bottom: 77px
+
+  &__justify
+   
+    justify-content: space-around
 
   &__kard
     position: relative 
@@ -217,30 +232,28 @@ main
    
   
   &__info
-    position: absolute
     color: #fff
-    top: 83px
-    font-size: 24px
-    margin-left: 6%
+    font-size: 20px
 
   &__first-img
     background: url("../img/kard_1.jpg")
+    margin-right: 35px 
     
 
   &__second-img 
     background: url("../img/kard_2.jpg")
-   
+    margin-right: 35px 
 
   &__third-img
     background: url("../img/kard_3.jpg")
    
   &__fourth-img 
     background: url("../img/kard_4.jpg")
-  
+    margin-right: 35px 
 
   &__fifth-img 
     background: url("../img/kard_5.jpg")
-    
+    margin-right: 35px
     
 
   &__sixth-img
@@ -248,40 +261,44 @@ main
     
   
 
-  &__info-second
-     margin-left: 11% 
-  &__info-third
-     margin-left: 12% 
-  &__info-fourth
-     margin-left: 5% 
-  &__info-fifth
-     margin-left: 17%   
-  &__info-sixth
-     margin-left: 7% !important  
+  &__wrapper
+    position: relative
+    top: 75%
+    left: 47%
+    z-index: 5
+    width: 20px
+    height: 20px
 
   &__bot
     position: absolute
-    top: 232px
-    left: 174px
-
+    top: -13%
+    left: -11%
+    
+  
   &__plas
     position: absolute
-    top: 79%
-    left: 47%
-    z-index: 5
-
-.main-choice
-  padding: 54px
-  height: 450px
-  background: #000
-
-  &__bottom
-    padding-top: 280px
-    color: #fff
+    bottom: 9%
+    left: 23%
+    z-index: 6
     
 
+.main-choice
+  padding-top: 54px 
+  background: #000
+
+  &__top
+    position: relative
+
+  &__bottom
+    color: #fff
+
+  &__conditions 
+    color: #fff
+
   &__bottom-text 
-    margin: 205px 0 250px 0
+    padding-top: 480px
+    margin-bottom: 210px 
+    color: #000
 
   &__bottom-conditions
     margin-bottom: 50px
@@ -305,23 +322,15 @@ main
     line-height: 1.7
     position: relative
 
-  &__blue-item li::after
-    content: ""
-    position: absolute
-    width: 21px
-    height: 20px
-    top: 3px 
-    left: -29px 
-    background: url("/img/check_blue.jpg")
+  &__blue-item li::before
+    content: url("/img/check_blue.jpg")
+    margin-right: 10px
+   
     
-  &__red-item li::after
-    content: ""
-    position: absolute
-    width: 21px
-    height: 20px
-    top: 3px 
-    left: -29px
-    background: url("/img/check-red.jpg")
+  &__red-item li::before
+    content: url("/img/check-red.jpg")
+    margin-right: 10px
+    
     
     
 
@@ -334,6 +343,10 @@ main
   height: 100%
   position: relative
 
+  &__top-tittle
+    font-size: 42px
+    font-weight: bold
+
   &::before
     content: ""
     position: absolute
@@ -344,16 +357,13 @@ main
     background: url("/img/world_bg.jpg")
   
   &__top-city
-    margin-bottom: 457px 
-
-  &__top-mr
-    height: 712px
+    color: #fff
 
   &__top
     padding: 46px 0 50px 0
+    justify-content: space-between
+    height: 712px
 
-  &__top-city
-    color: #fff
 
   &__top-link
     color: #1FBAD6
@@ -441,7 +451,9 @@ main
 @media all and (max-width : 780px) 
 
   .bg-light 
-    background-color: #f8f9fa!important
+    background: black !important
+
+  /*header*/
 
   .header-info
     &__uber
@@ -460,11 +472,76 @@ main
 
     &__contact 
       margin-bottom: 57px
-  
-  .main-world
-    &__top
-      height: 212px
+
+  /*main*/
+
+  .main-about
+    &__section 
+      height: 300px
+
+    &__circle
+      margin: auto
+      width: 31%
+      height: 49%  
+      margin-bottom: 25px 
+
+  .main-mobile .main-tittle, .main-about .main-tittle
+     font-size: 30px
+
+  .main-mobile
+    &__button
+      width: 107px
+      height: 11px
  
+
+
+  .main-world
+    &____top-cityes
+      height: 22px
+      width: 72px
+
+    &__top-tittle
+      font-size: 22px
+
+    &__top
+      padding-bottom: 29px
+      height: 360px
+      justify-content: space-between
+
+    &__top-link p
+      margin-bottom: 0
+
+  .main-img
+    &__first-img, &__second-img, &__fourth-img, &__fifth-img 
+      margin-right: 0
+
+  .main-list
+    &__blue-item, &__red-item, &__blue, &__red, &__blue-text  
+      margin-left: 0
+
+    &__blue-text
+      padding: 0
+      font-size: 18px
+
+   
+  .main-info 
+    &__tittle-mobile 
+      font-size: 30px
+    &__car 
+      top: 216%
+  
+  .main-choice
+    &__conditions
+      padding-top: 20px
+    &__next
+      background: #000
+    &__bottom-text
+      color: #fff
+      padding-top: 280px
+      margin-bottom: 110px
+    &__bottom
+      padding-top: 80px
+    
   .footer-nav
     &__list-item
       font-size: 12px
@@ -511,18 +588,14 @@ main
       content: ""
       position: absolute
       top: 120%
-      right: 29%
+      right: 30%
       width: 296px
       height: 26px
       background: url("/img/link_foot.jpg")
     
-  .main-choice
-    &__next
-      background: #000
-    &__bottom-text
-      color: #fff
-    &__bottom
-      padding-top: 80px
+
+     
+
   
   .footer-list
     &__link-item
