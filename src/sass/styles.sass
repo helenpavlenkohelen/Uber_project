@@ -7,10 +7,10 @@ body
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
   border-radius: 4px
   height: 46px
-  padding: 13px 17px
+  padding: 15px 17px
   text-decoration: none
   color: #fff
-  font-size: 14px
+  font-size: 12px
 
 
 .navbar-light .navbar-toggler 
@@ -19,13 +19,20 @@ body
 .navbar 
   padding: 0
 
-
+.nav__menu-bar
+  padding: 10px
+  color: white
+  font-size: 10px
 
 .nav
   background: #212121
   padding: 10px 0 0 0
   flex-grow: 1
-
+  width: 100%
+  &-item__first
+    margin-left: 78px
+  &__menu
+    width: 100%
   &__list
    margin-right: 10px
    font-style: normal
@@ -43,7 +50,8 @@ body
 
   &__list-item 
     border-right: 1px dotted #000
-
+  &-item
+    cursor: pointer
 
 
 header
@@ -60,10 +68,9 @@ header
 .header-nav
 
   &__contact-button 
-    width: 164px
     height: 39px
-    padding: 11px 19px
-    font-size: 14px
+    padding: 15px 17px
+    font-size: 12px
 
 
   &__link
@@ -73,12 +80,14 @@ header
      font-size: 13px
      color: #fff
      font-weight: 100
+     cursor: pointer
 
 
   &__contact-phone
     color: #fff
     font-size: 12px
     font-weight: 300
+    cursor: pointer
 
 
   &__contact-nomber
@@ -220,7 +229,6 @@ main
 
   &__circle
    width: 115px
-   height: 104px
 
 
 .main-img
@@ -465,24 +473,44 @@ main
 
 @media all and (max-width : 992px) 
 
+  .nav 
+    padding: 0
+
+  .header-nav
+    &__contact-media
+      justify-content: center
+    &__contact-book
+      width: auto
+      justify-content: center
+    &__contact-button 
+      font-size: 10px!important
+      display: flex
+      margin: auto
+      width: 111px
+      height: 27px
+      padding: 7px 9px
+  
+    &__contact-nomber
+      display: flex
+      justify-content: center
+      font-size: 16px
+
+    &__contact
+      display: flex
+      justify-content: end
+
+  .nav
+    justify-content: center
+
+    &-item__first
+      margin-left: 0!important
+
   .navbar-light .navbar-toggler 
     background: #817373
 
   .bg-light 
     background: transparent !important
 
-  .header-nav__contact
-    display: flex
-    justify-content: end
-    
-    &-button 
-      width: 111px
-      height: 27px
-      padding: 7px 9px
-      font-size: 10px
-
-    &-nomber 
-      font-size: 16px
 
   .header-info
     &__uber
@@ -494,7 +522,6 @@ main
     &__circle 
       margin: auto
       width: 130px
-      height: 105px
       margin-bottom: 25px 
     &__section 
       height: 254px 
@@ -574,6 +601,32 @@ main
       background: url("/img/link_foot.jpg")
 
 @media all and (max-width : 780px) 
+   .nav 
+    padding: 0
+
+  .header-nav
+    &__contact-media
+      justify-content: center
+    &__contact-book
+      width: auto
+      justify-content: center
+    &__contact-button 
+      font-size: 10px!important
+      display: flex
+      margin: auto
+      width: 111px
+      height: 27px
+      padding: 7px 9px
+  
+    &__contact-nomber
+      display: flex
+      justify-content: center
+      font-size: 16px
+
+    &__contact
+      display: flex
+      justify-content: end
+
   .nav 
     padding-top: 0
 
@@ -613,7 +666,7 @@ main
     &__circle
       margin: auto
       width: 130px
-      height: 105px  
+   
       margin-bottom: 25px 
 
   .main-mobile .main-tittle, .main-about .main-tittle

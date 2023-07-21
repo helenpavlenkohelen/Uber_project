@@ -21,32 +21,34 @@
   <!-- nav -->
   <section class="nav">
   
-   <nav class="row justify-content-end navbar-expand-lg  container navbar-light">
+   <nav class="row nav__menu justify-content-end navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
        <span class="navbar-toggler-icon"></span>
+        <!-- <a href="https://www.flaticon.com/free-icons/burger" title="burger icons"></a> -->
+       <!-- <img class="nav__menu-bar" src="/img/burger.png"></img> -->
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
     
         <section class="nav">
          <nav class="navbar-nav mr-auto container nav-height">
-          <ul class="row list-unstyled nav__list"> 
-           <li class="nav-item active col-md col-md-auto text-center align-self-center offset-md-1 nav__list-item">
+          <ul class="row list-unstyled nav__list flex-sm-column flex-lg-row"> 
+           <li class="nav-item nav-item__first active col-md-auto text-center align-self-center nav__list-item">
             <a class="nav__link">Главная</a>
            </li>
-           <li class="nav-item col-md col-md-auto text-center align-self-center nav__list-item">
+           <li class="nav-item col-md-auto text-center align-self-center nav__list-item">
             <a class="nav__link">Со своим автомобилем</a>
            </li>
-           <li class="nav-item col-md col-md-auto text-center align-self-center nav__list-item">
+           <li class="nav-item col-md-auto text-center align-self-center nav__list-item">
             <a class="nav__link">На автомобиле компании</a>
            </li>
-           <li class="nav-item col-md col-md-auto text-center align-self-center nav__list-item">
+           <li class="nav-item col-md-auto text-center align-self-center nav__list-item">
             <a class="nav__link">Требования</a>
            </li>
-           <li class="nav-item col-md col-md-auto text-center align-self-center">
+           <li class="nav-item col-md-auto text-center align-self-center">
             <a class="nav__link">Контакты</a>
            </li>
-           <li class="nav-item col-md col-md-auto text-center align-self-center">
+           <li class="nav-item col-md-auto text-center align-self-center">
             <a class="nav__link">Оставить заявку</a>
            </li>
           </ul>
@@ -64,16 +66,16 @@
       
        <div class="container">
          <section class="row mr-0 header-nav__contact">
-            <article class="col col-md-3 offset-md-1 d-xs-none d-sm-none d-md-none d-lg-block d-xl-block header-nav__contact-uber align-self-center"><p>Официальный сайт Uber Украина</p>
+            <article class="col col-md-3 offset-md-1 d-none  d-lg-block header-nav__contact-uber align-self-center"><p>Официальный сайт Uber Украина</p>
             </article>
             <section class="col col-md-4 offset-md-3 col-sm-4 offset-sm-8 row align-items-center">
-              <div class="row">
-                <section class="col col-md">
-                  <p class=" header-nav__contact-phone mb-md-0 d-xs-none d-sm-none d-md-none d-lg-block">Звоните нам ежедневно</p>
+              <div class="row justify-content-center">
+                <section class="col header-nav__contact-media">
+                  <p class=" header-nav__contact-phone mb-md-0 d-none d-lg-block">Звоните нам ежедневно</p>
                   <a class=" header-nav__contact-nomber" href="tel:380992450345">380992450345</a>
                 </section>
-                <section class="col col-md col-md-auto col-lg-auto">
-                  <a class="header-nav__contact-button d-block button text-uppercase align-self-center" href="#">
+                <section class="col col-xl-auto header-nav__contact-book row">
+                  <a class="header-nav__contact-button button text-uppercase align-self-center" href="#">
                     <span>Заказать звонок</span>
                   </a>
                 </section>
@@ -85,11 +87,11 @@
       <div class="container header-info mt-5">
             <h1 class="col header-info__uber text-center">компания uber partners!</h1>
             <h2 class="col header-info__welcom text-center">приглашаем водителей! на своем авто!</h2>
-            <p class="col header-info__company-first d-md-none text-center d-sm-none d-lg-block">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди<br> 
+            <p class="col header-info__company-first d-none text-center d-lg-block">Компания UBER  динамически развивающаяся. Компания на рынке занимает лидирующее место среди<br> 
             таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в <br>
             личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за <br>
             пиковое время.</p>
-            <p class="col-xl-12 header-info__company text-center d-md-none d-sm-none d-lg-block">Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Киев.  Водители у нас <br>
+            <p class="col-md-12 header-info__company text-center d-none d-lg-block">Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Киев.  Водители у нас <br>
             зарабатывают от 80000- 120000 в месяц.
             </p>
             <a class="col-sm-12 header-info__button button text-center align-self-center text-uppercase" href="#">отправить заявку!</a>
