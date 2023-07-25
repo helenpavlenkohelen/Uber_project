@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,100&family=Ubuntu:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/iconsfont.css">
   <link rel="stylesheet" href="./css/styles.css">
 
   <title>Uber</title>
@@ -23,9 +24,9 @@
   
    <nav class="row nav__menu justify-content-end navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-       <span class="navbar-toggler-icon"></span>
-        <!-- <a href="https://www.flaticon.com/free-icons/burger" title="burger icons"></a> -->
-       <!-- <img class="nav__menu-bar" src="/img/burger.png"></img> -->
+       <!-- <span class="navbar-toggler-icon"></span> -->
+        <a class="icons fa-solid fa-bars"></a> 
+        <!-- <img class="nav__menu-bar" src="/img/burger.png"></img>  -->
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -68,11 +69,11 @@
          <section class="row mr-0 header-nav__contact">
             <article class="col col-md-3 offset-md-1 d-none  d-lg-block header-nav__contact-uber align-self-center"><p>Официальный сайт Uber Украина</p>
             </article>
-            <section class="col col-md-4 offset-md-3 col-sm-4 offset-sm-8 row align-items-center">
+            <section class="col offset-8 col-md-4 offset-md-3 col-sm-4 offset-sm-8 row align-items-center">
               <div class="row justify-content-center">
-                <section class="col header-nav__contact-media">
-                  <p class=" header-nav__contact-phone mb-md-0 d-none d-lg-block">Звоните нам ежедневно</p>
-                  <a class=" header-nav__contact-nomber" href="tel:380992450345">380992450345</a>
+                <section class="col  header-nav__contact-media">
+                  <p class="header-nav__contact-phone mb-md-0 d-none d-lg-block">Звоните нам ежедневно</p>
+                  <a class="header-nav__contact-nomber" href="tel:380992450345">380992450345</a>
                 </section>
                 <section class="col col-xl-auto header-nav__contact-book row">
                   <a class="header-nav__contact-button button text-uppercase align-self-center" href="#">
@@ -101,88 +102,102 @@
    <!-- main -->
 
    <main>
-    <section class="container">
-      <div class="row main-about">
-           <section class="col-sm-12 main-about__info">
-               <a class="text-uppercase text-center button-black center-block main-info__button" href="#"><span>преимущества</span></a>
-               <h2 class="main-info__tittle-mobile main-tittle text-uppercase text-center">8 причин работать с нами</h2>
-            </section>
-            <div class="w-100"></div>
-            <section class=" col-lg-6">
-              <div class="row row-cols-1">
-                <section class="col row main-about__section">
-                   <img class="col-lg-3 main-about__circle-first main-about__circle align-self-center" src="/img/circle_1.png">
-                   <section class="col-lg-9">
-                    <article class="main-about__item">
-                      <h4 class="main-about__item-blue">Никаких наличных, оплата происходит    <br>автоматически</h4><p>Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</p>
-                    </article>
-                   </section>
-                </section>
-                <section class="col row main-about__section">
-                   <img class="col-lg-3 main-about__circle-second main-about__circle align-self-center" src="/img/circle_2.png">
-                   <section class="col-lg-9">
-                    <article class="main-about__item">
-                       <h4 class="main-about__item-blue">Высокий доход с гарантированными<br> выплатами</h4><p>Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</p>
-                    </article>
-                   </section>
-                </section>
-                <section class="col row main-about__section">
-                   <img class="col-lg-3 main-about__circle-third main-about__circle align-self-center" src="/img/circle_3.png">
-                   <section class="col-lg-9">
-                     <article class="main-about__item">
-                       <h4 class="main-about__item-blue">Комфортное, прозрачное и простое<br>подключение</h4><p>Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!</p>
-                     </article>
-                   </section>
-                </section>
-                <section class="col row main-about__section">
-                   <img class="col-lg-3 main-about__circle-fourth main-about__circle align-self-center" src="/img/circle_4.png">
-                   <section class="col-lg-9">
-                     <article class="main-about__item">
-                       <h4 class="main-about__item-blue">Круглосуточная поддержка</h4><p>В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</p>
-                     </article>
-                   </section>
-                </section>
-              </div>
-            </section>
+      <section class="container">
+       <div class="row main-about">  
+        <section class="col-sm-12 main-about__info">
+          <a class="text-uppercase text-center button-black center-block main-info__button"
+            href="#"><span>преимущества</span></a>
+          <h2 class="main-info__tittle-mobile main-tittle text-uppercase text-center">8 причин работать с нами</h2>
+        </section>
+        <div class="w-100"></div>
+        
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-fifth main-about__circle align-self-center" src="/img/circle_8.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Комиссия 8% + БОНУСЫ</h4>
+              <p>У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют
+                бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</p>
+            </article>
+          </section>
+        </section>
 
-            <section class=" col-lg-6">
-             <div class="row row-cols-1">
-              <section class="col row main-about__section">
-                  <img class="col-lg-3 main-about__circle-fifth main-about__circle align-self-center" src="/img/circle_8.png">
-                  <section class="col-lg-9">
-                     <article class="main-about__item">
-                       <h4 class="main-about__item-blue">Комиссия 8% + БОНУСЫ</h4><p>У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</p>
-                     </article>
-                  </section>
-              </section>
-              <section class="col row main-about__section">
-                  <img class="col-lg-3 main-about__circle-sixth main-about__circle align-self-center" src="/img/circle_7.png">
-                  <section class="col-lg-9">
-                     <article class="main-about__item">
-                       <h4 class="main-about__item-blue">Работа в удобное время, никаких<br>графиков</h4><p>Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!</p>
-                     </article>
-                  </section>
-              </section>
-              <section class="col row main-about__section">
-                  <img class="col-lg-3 main-about__circle-seventh main-about__circle align-self-center" src="/img/circle_6.png">
-                  <section class="col-lg-9">
-                    <article class="main-about__item">
-                      <h4 class="main-about__item-blue">Всегда большое количество заказов</h4><p>Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.</p>
-                    </article>
-                  </section>
-              </section>
-              <section class="col row main-about__section">
-                  <img class="col-lg-3 main-about__circle-eighth main-about__circle align-self-center" src="/img/circle_5.png">
-                  <section class="col-lg-9">
-                     <article class="main-about__item">
-                       <h4 class="main-about__item-blue">Без шашечек и наклеек</h4><p>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</p>
-                     </article>
-                  </section>
-              </section>
-             </div>
-            </section>
-      </div>
-        <section class="col-sm-12 main-mobile">
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-first main-about__circle align-self-center" src="/img/circle_1.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Никаких наличных, оплата происходит <br>автоматически</h4>
+              <p>Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с
+                перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</p>
+            </article>
+          </section>
+        </section>
+        <div class="w-100 d-none d-lg-block"></div>
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-second main-about__circle align-self-center" src="/img/circle_2.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Высокий доход с гарантированными<br> выплатами</h4>
+              <p>Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить
+                налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</p>
+            </article>
+          </section>
+        </section>
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-sixth main-about__circle align-self-center" src="/img/circle_7.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Работа в удобное время, никаких<br>графиков</h4>
+              <p>Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии.
+                Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!</p>
+            </article>
+          </section>
+        </section>
+        <div class="w-100 d-none d-lg-block"></div>
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-third main-about__circle align-self-center" src="/img/circle_3.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Комфортное, прозрачное и простое<br>подключение</h4>
+              <p>Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии
+                документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!
+              </p>
+            </article>
+          </section>
+        </section>
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-seventh main-about__circle align-self-center" src="/img/circle_6.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Всегда большое количество заказов</h4>
+              <p>Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не
+                будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых
+                приятно возить.</p>
+            </article>
+          </section>
+        </section>
+        <div class="w-100 d-none d-lg-block"></div>
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-fourth main-about__circle align-self-center" src="/img/circle_4.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Круглосуточная поддержка</h4>
+              <p>В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда
+                можете задать вопрос через On-line консультацию.</p>
+            </article>
+          </section>
+        </section>
+        <section class="col-12 col-lg-6 row main-about__section">
+          <img class="col-lg-3 main-about__circle-eighth main-about__circle align-self-center" src="/img/circle_5.png">
+          <section class="col-lg-9">
+            <article class="main-about__item">
+              <h4 class="main-about__item-blue">Без шашечек и наклеек</h4>
+              <p>Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</p>
+            </article>
+          </section>
+        </section>
+        <div class="w-100 d-none d-lg-block main-about__buttom"></div>
+         <section class="col-sm-12 main-mobile">
           <div class="row">
            <section class="row col-sm-12 main-info px-0 mx-0">
              <a class="text-uppercase main-mobile__button text-center button-black center-block  align-self-center" href="#"><span>возможности</span></a>
@@ -190,58 +205,59 @@
              <p class="col-sm-12 px-0 mx-0 main-info__text text-uppercase text-center main-info__text">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон</p>
            </section>
           </div>
-        </section>
-        <section class="col-sm-12 main-img">
-         <div class="row justify-content-center mr-0 ml-0 mb-0">
-           <figure class="col-lg-3 main-img__first-img  main-img__kard img-fluid p-0 ml-0 row">
+         </section>
+         <section class="col-sm-12 main-img">
+          <div class="row justify-content-center mr-0 ml-0 mb-0">
+           <figure class="col-lg-3 col-md-5 main-img__first-img  main-img__kard img-fluid p-0 ml-0 mr-md-4 row">
             <div class="main-img__wrapper">
               <img class="main-img__plas" src="./img/plas.jpg"> 
               <img class="main-img__bot" src="./img/buttom.png">
             </div>
             <p class="main-img__info img-fluid text-uppercase m-auto text-center">оформление заказа<br>одним касанием</p>
            </figure>
-           <figure class="col-lg-3 main-img__second-img main-img__kard img-fluid p-0 ml-0 row">
+           <figure class="col-lg-3 col-md-5  main-img__second-img main-img__kard img-fluid p-0 ml-0 mr-md-4  row">
              <div class="main-img__wrapper">
               <img class="main-img__plas" src="./img/plas.jpg">
               <img class="main-img__bot" src="./img/buttom.png">
              </div> 
             <p class="main-img__info text-uppercase text-center m-auto">надежная подача</p>
            </figure>
-           <div class="w-100 d-lg-none"></div>
-           <figure class="col-lg-3 main-img__third-img main-img__kard img-fluid p-0 ml-0 row">
+           <div class="w-100 d-sm-none d-md-block d-lg-none"></div>
+           <figure class="col-lg-3 col-md-5 main-img__third-img main-img__kard img-fluid p-0 ml-0 mr-md-4  row">
              <div class="main-img__wrapper">
               <img class="main-img__plas" src="./img/plas.jpg">
               <img class="main-img__bot" src="./img/buttom.png">
              </div>
             <p class="main-img__info text-uppercase text-center m-auto">прозрачные цены</p>
            </figure>
-           <div class="w-100 mb-1"></div>
-           <figure class="col-lg-3 main-img__fourth-img main-img__kard img-fluid p-0 ml-0 row">
+           <div class="w-100 mb-1 d-md-none "></div>
+           <figure class="col-lg-3 col-md-5 main-img__fourth-img main-img__kard img-fluid p-0 ml-0  mr-md-4 row">
              <div class="main-img__wrapper">
               <img class="main-img__plas" src="./img/plas.jpg">
               <img class="main-img__bot" src="./img/buttom.png"> 
              </div>
             <p class="main-img__info text-uppercase text-center m-auto">безналичная оплата</p>
            </figure>
-           <figure class="col-lg-3 main-img__fifth-img main-img__kard img-fluid p-0 ml-0 row">
+           <div class="w-100 d-sm-none d-md-block d-lg-none"></div>
+           <figure class="col-lg-3 col-md-5 main-img__fifth-img main-img__kard img-fluid p-0 ml-0 mr-md-4  row">
              <div class="main-img__wrapper">
               <img class="main-img__plas" src="./img/plas.jpg">
               <img class="main-img__bot" src="./img/buttom.png">
              </div>
             <p class="main-img__info text-uppercase text-center m-auto">обратная связь</p>
            </figure>
-           <figure class="col-lg-3 main-img__sixth-img main-img__kard img-fluid p-0 ml-0 row">
+           <figure class="col-lg-3 col-md-5 main-img__sixth-img main-img__kard img-fluid p-0 ml-0  mr-md-4 row">
              <div class="main-img__wrapper">
               <img class="main-img__plas" src="./img/plas.jpg">
               <img class="main-img__bot" src="./img/buttom.png">
              </div>
             <p class="main-img__info  text-uppercase t text-center m-auto">разделитель<br>стоимости поездки</p>
            </figure>
-         </div>
-        </section>
-      </div>
-    </section>
-    <section class="main-choice">
+          </div>
+         </section>
+       </div>
+      </section>
+      <section class="main-choice">
        <section class="main-choice__top">
         <img class="col-xl-12 main-choice__top-darck px-0" src="./img/darck.jpg">
         <div class="container">
@@ -249,14 +265,14 @@
             <section class="col-lg-12 main-choice__top-info">
               <a class="text-uppercase button-white center-block main-info__button" href="#"><span>возможности</span></a>
               <h2 class="main-info__tittle-choice text-uppercase text-center d-xs-none d-md-block d-sm-none">выбор отличная штука</h2>
-              <p class="main-info__text-choice text-uppercase text-center d-sm-none d-md-block d-sm-none">закажите автомобиль который подходит по стилю и по бюджету</p>
+              <p class="main-info__text-choice text-uppercase text-center d-none d-md-block d-sm-none">закажите автомобиль который подходит по стилю и по бюджету</p>
               <img class="col-lg-12 main-info__car" src="./img/cars1.png">
             </section>
           </div>
         </div>
        </section>
        <section class="main-choice__next">
-         <img class="col-lg-12 main-choice__top-white d-xs-none d-sm-none d-lg-block" src="./img/white.png">
+         <img class="col-lg-12 main-choice__top-white d-none d-sm-none d-lg-block" src="./img/white.png">
          <div class="container">
           <section class="row col-lg-12 main-choice__bottom-info justify-content-center m-0">
              <article class="text-center main-choice__bottom-text">
@@ -266,8 +282,9 @@
           </div>
          </div>
        </section>
-    </section>
-    <div class="container">
+     </div>
+      </section>
+      <section class="container">
       <div class="row">
         <section class="col-lg-12 main-choice__conditions">
           <section class="main-choice__bottom-conditions">
@@ -328,8 +345,8 @@
          </div>
         </div>
       </div>
-    </div>
-    <section class="main-world">
+      </section>
+      <section class="main-world">
       <div class="container">
        <div class="row main-world__top-mr">
          <section class="row col-lg-12 main-world__top ml-0 mr-0">
@@ -345,8 +362,8 @@
           </section>
        </div>
       </div>
-    </section>
-  </main>
+      </section>
+   </main>
 
   <!-- footer -->
 

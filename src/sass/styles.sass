@@ -210,10 +210,8 @@ main
        margin-bottom: 30px
 
 .main-about
-  margin-bottom: 115px
-
-  &__section
-    height: 185px 
+  &__buttom
+    margin-bottom: 70px
 
   &__item
     color: #202020
@@ -297,7 +295,6 @@ main
     
 
 .main-choice
-  padding-top: 54px 
   
   &__top-darck
     height: 498px
@@ -469,12 +466,25 @@ main
     display: block  
     margin: auto
 
+@media all and (max-width : 1200px) 
 
+  .nav__link 
+    font-size: 11px
+    
+  .header-nav
+    &__contact-button 
+      font-size: 10px!important
 
 @media all and (max-width : 992px) 
 
-  .nav 
-    padding: 0
+  a .icons
+    font-size: 10px
+    color: white !important
+
+  .fas .fa-solid
+    font-size: 10px
+    color: white
+
 
   .header-nav
     &__contact-media
@@ -501,12 +511,12 @@ main
 
   .nav
     justify-content: center
-
+    padding: 10px
     &-item__first
       margin-left: 0!important
 
   .navbar-light .navbar-toggler 
-    background: #817373
+    background: #212529
 
   .bg-light 
     background: transparent !important
@@ -523,12 +533,8 @@ main
       margin: auto
       width: 130px
       margin-bottom: 25px 
-    &__section 
-      height: 254px 
     &__item 
       text-align: center
-    &__section 
-      height: 295px
 
   .main-img
     &__third-img 
@@ -600,9 +606,18 @@ main
       height: 26px
       background: url("/img/link_foot.jpg")
 
-@media all and (max-width : 780px) 
-   .nav 
-    padding: 0
+@media all and (max-width : 780px)
+
+  a .icons
+    font-size: 10px
+    color: white !important
+
+  .fas .fa-solid
+    font-size: 10px
+    color: white!important
+   
+  .nav 
+    padding: 10px
 
   .header-nav
     &__contact-media
@@ -631,7 +646,8 @@ main
     padding-top: 0
 
   .navbar-light .navbar-toggler 
-    background: #817373
+    background: #212529
+    color: #fff
 
 
   .bg-light 
@@ -660,8 +676,6 @@ main
 
 
   .main-about
-    &__section 
-      height: 335px
 
     &__circle
       margin: auto
@@ -711,22 +725,28 @@ main
       font-size: 18px
 
    
-  .main-info 
+  main .main-info 
     &__tittle-mobile 
       font-size: 30px
+    &__tittle-choice 
+      font-size: 20px
     &__car 
-      top: 157px
+      top: 120%
+
   
   .main-choice
     &__top-info 
       top: 28px
-
+    &__top-darck
+      height: 450px
     &__conditions
       padding-top: 20px
     &__bottom-text
       color: #fff
+      font-size: 16px
     &__bottom
       padding-top: 80px
+  
     
   .footer-nav
     &__list-item
