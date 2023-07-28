@@ -1,3 +1,7 @@
+*
+ p 
+   padding: 0
+   margin: 0
 body
   font-family: 'Roboto', sans-serif
   font-style: normal
@@ -212,7 +216,8 @@ main
 .main-about
   &__buttom
     margin-bottom: 70px
-
+  &__section
+    width: auto
   &__item
     color: #202020
     font-size: 17px
@@ -274,7 +279,7 @@ main
   
 
   &__wrapper
-    position: relative
+    position: absolute
     top: 75%
     left: 47%
     z-index: 5
@@ -363,7 +368,6 @@ main
 
 .main-world
   background: url("/img/black.jpg")
-  height: 100%
   position: relative
 
   &__top-tittle
@@ -398,59 +402,34 @@ main
 .footer-list
   &__link
     color: #999999
+  &__link-ru
+    margin-bottom: 16px
 
 .footer-nav
-  cursor: pointer
-  padding: 10px 0 40px 0
-  background: #fff
   position: relative
-
-  &__soc-first::before
-    content: ""
-    position: absolute
-    top: 49px
-    left: 28px
-    width: 33px
-    height: 34px
-    background: url("/img/fase.jpg")
-
-  &__soc-second::before
-    content: ""
-    position: absolute
-    top: 49px
-    left: 67px
-    width: 33px
-    height: 34px
-    background: url("/img/tviter.jpg")
-
-  &__soc-third::before
-    content: ""
-    position: absolute
-    top: 49px
-    left: 107px
-    width: 33px
-    height: 34px
-    background: url("/img/link.jpg")
-
-      
-  &__soc-fourth::before
-    content: ""
-    position: absolute
-    top: 49px
-    left: 147px
-    width: 33px
-    height: 34px
-    background: url("/img/insta.jpg")
+  cursor: pointer
+  padding: 10px 0 30px 0
+  background: #fff
   
-  
-  &::after
-    content: ""
-    position: absolute
-    top: 49px
-    right: 28px
-    width: 296px
-    height: 26px
-    background: url("/img/link_foot.jpg")
+
+  &__soc-main
+    position: absolute!important
+    top: 64px
+    left: 2%
+    padding: 0
+    width: 150px
+    margin: auto
+    margin-bottom: 20px
+
+  &__soc-media
+    position: absolute!important
+    top: 71px
+    left: 75%
+    padding: 0
+    width: 285px
+    margin: auto
+
+ 
     
   &__list
     margin-top: 20px
@@ -528,6 +507,17 @@ main
       font-size: 40px
       margin-bottom: 1rem
 
+  main .main-info 
+    &__tittle-mobile 
+      font-size: 30px
+    &__tittle-choice 
+      font-size: 20px
+    &__car 
+      top: 33%
+  .main-choice
+    &__top-white 
+      height: 303px
+
   .main-about
     &__circle 
       margin: auto
@@ -535,6 +525,8 @@ main
       margin-bottom: 25px 
     &__item 
       text-align: center
+    &__section
+      width: auto
 
   .main-img
     &__third-img 
@@ -553,61 +545,27 @@ main
     &__top
       padding-bottom: 29px
       height: 360px
-      justify-content: space-between
+    
 
   .footer-nav
+    height: 300px
     &__list-item
       font-size: 12px
-  
-    &__soc-first::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 38%
-      width: 33px
-      height: 34px
-      background: url("/img/fase.jpg")
+      padding-bottom: 40px
 
-    &__soc-second::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 45%
-      width: 33px
-      height: 34px
-      background: url("/img/tviter.jpg")
+    &__soc-main
+      top: 188px
+      left: 42%
+   
 
-    &__soc-third::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 51%
-      width: 33px
-      height: 34px
-      background: url("/img/link.jpg")
-
-      
-    &__soc-fourth::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 58%
-      width: 33px
-      height: 34px
-      background: url("/img/insta.jpg")
+    &__soc-media
+      top: 245px
+      left: 35%
+ 
   
-  
-    &::after
-      content: ""
-      position: absolute
-      top: 120%
-      right: 30%
-      width: 296px
-      height: 26px
-      background: url("/img/link_foot.jpg")
 
 @media all and (max-width : 780px)
-
+ 
   a .icons
     font-size: 10px
     color: white !important
@@ -653,16 +611,18 @@ main
   .bg-light 
     background: transparent !important
 
-
+   
 
   .header-info
     &__uber
-      font-weight: 900
-      font-size: 40px
+      font-weight: 700
+      font-size: 44px
       margin-bottom: 1rem
-      
+    &__welcom 
+      font-size: 33px
+  
   .header-nav__contact-nomber 
-    font-size: 16px
+    font-size: 13px
 
   .header-nav__contact-button 
     width: 111px
@@ -680,8 +640,9 @@ main
     &__circle
       margin: auto
       width: 130px
-   
       margin-bottom: 25px 
+    &__section
+      width: auto
 
   .main-mobile .main-tittle, .main-about .main-tittle
      font-size: 30px
@@ -704,7 +665,6 @@ main
     &__top
       padding-bottom: 29px
       height: 360px
-      justify-content: space-between
 
     &__top-link p
       margin-bottom: 0
@@ -731,7 +691,7 @@ main
     &__tittle-choice 
       font-size: 20px
     &__car 
-      top: 120%
+      top: 181%
 
   
   .main-choice
@@ -751,60 +711,96 @@ main
   .footer-nav
     &__list-item
       font-size: 12px
-  
-    &__soc-first::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 38%
-      width: 33px
-      height: 34px
-      background: url("/img/fase.jpg")
-
-    &__soc-second::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 45%
-      width: 33px
-      height: 34px
-      background: url("/img/tviter.jpg")
-
-    &__soc-third::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 51%
-      width: 33px
-      height: 34px
-      background: url("/img/link.jpg")
-
-      
-    &__soc-fourth::before
-      content: ""
-      position: absolute
-      top: 90%
-      left: 58%
-      width: 33px
-      height: 34px
-      background: url("/img/insta.jpg")
-  
-  
-    &::after
-      content: ""
-      position: absolute
-      top: 120%
-      right: 30%
-      width: 296px
-      height: 26px
-      background: url("/img/link_foot.jpg")
     
+    &__soc-main
+      top: 188px
+      left: 40%
+   
 
-     
-
+    &__soc-media
+      top: 245px
+      left: 31%
   
   .footer-list
     &__link-item
       font-size: 14px
 
 
+@media all and (max-width : 730px)
+
+  .header-info
+    &__welcom 
+      font-size: 29px
+    &__uber 
+      font-weight: 700
+      font-size: 44px
+
+  main .button-white span
+    font-size: 14px
+    text-align: center
+
+  .main-list__blue-item, .main-list__red-item, .main-list__blue, .main-list__red, .main-list__blue-text 
+    margin-left: 19px
+
+  .main-choice
+    &__top
+      height: 565px
+    &__bottom-text 
+      color: #000
+      font-size: 16px  
+
+  .footer-nav
+    &__list-item
+      font-size: 12px
+    
+    &__soc-main
+      top: 188px
+      left: 39%
+   
+
+    &__soc-media
+      top: 245px
+      left: 30%
+
+
+@media all and (max-width : 480px)
+
+  .header-info
+    &__welcom 
+      font-size: 29px
+    &__uber 
+      font-weight: 700
+      font-size: 44px
+
+  main .button-white span
+    font-size: 14px
+    text-align: center
+
+  .main-list__blue-item, .main-list__red-item, .main-list__blue, .main-list__red, .main-list__blue-text 
+    margin-left: 19px
+  .main-mobile .main-tittle, .main-about .main-tittle 
+    font-size: 26px
+  .main-choice
+    &__top
+      height: 300px
+    &__bottom-text 
+      color: #fff
+      font-size: 16px  
+    &__bottom-info 
+      top: 16px
+  
+  .footer-nav
+    &__list-item
+      font-size: 12px
+   
+    &__soc-main
+      top: 200px
+      left: 33%
+   
+
+    &__soc-media
+      top: 250px
+      left: 18%
+  .footer-list
+     &__link
+      font-size: 7px
