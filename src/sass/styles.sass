@@ -16,6 +16,11 @@ body
   color: #fff
   font-size: 12px
 
+.fa-bars, .fa-bars:before
+  color: #fff
+
+.fa-solid, .fa-solid:before
+  color: #fff
 
 .navbar-light .navbar-toggler 
   background: #fff
@@ -319,8 +324,6 @@ main
   &__bottom
     color: #fff
 
-  &__conditions 
-    color: #fff
 
   &__bottom-info 
      top: -75px
@@ -527,6 +530,9 @@ main
       text-align: center
     &__section
       width: auto
+ 
+  .main-mobile
+    padding-top: 60px
 
   .main-img
     &__third-img 
@@ -560,11 +566,11 @@ main
 
     &__soc-media
       top: 245px
-      left: 35%
+      margin-left: -146px
  
   
 
-@media all and (max-width : 780px)
+@media all and (max-width : 760px)
  
   a .icons
     font-size: 10px
@@ -584,21 +590,22 @@ main
       width: auto
       justify-content: center
     &__contact-button 
-      font-size: 10px!important
+      font-size: 8px!important
       display: flex
       margin: auto
       width: 111px
       height: 27px
-      padding: 7px 9px
+      padding: 7px 17px
   
     &__contact-nomber
       display: flex
       justify-content: center
-      font-size: 16px
+      font-size: 13px
 
     &__contact
       display: flex
       justify-content: end
+      margin-bottom: 57px
 
   .nav 
     padding-top: 0
@@ -620,20 +627,6 @@ main
       margin-bottom: 1rem
     &__welcom 
       font-size: 33px
-  
-  .header-nav__contact-nomber 
-    font-size: 13px
-
-  .header-nav__contact-button 
-    width: 111px
-    height: 27px
-    padding: 7px 9px
-    font-size: 10px
-
-    &__contact 
-      margin-bottom: 57px
-
-
 
   .main-about
 
@@ -651,7 +644,7 @@ main
     &__button
       width: 107px
       height: 11px
- 
+
 
 
   .main-world
@@ -695,10 +688,9 @@ main
 
   
   .main-choice
+    height: 500px
     &__top-info 
       top: 28px
-    &__top-darck
-      height: 450px
     &__conditions
       padding-top: 20px
     &__bottom-text
@@ -714,16 +706,19 @@ main
     
     &__soc-main
       top: 188px
-      left: 40%
+      left: 50%
+      margin-left: -75px
    
 
     &__soc-media
       top: 245px
-      left: 31%
+      left: 50%
+      margin-left: -146px
+ 
   
   .footer-list
     &__link-item
-      font-size: 14px
+      font-size: 10px
 
 
 @media all and (max-width : 730px)
@@ -731,6 +726,7 @@ main
   .header-info
     &__welcom 
       font-size: 29px
+
     &__uber 
       font-weight: 700
       font-size: 44px
@@ -755,13 +751,34 @@ main
     
     &__soc-main
       top: 188px
-      left: 39%
+      left: 50%
+      margin-left: -75px
    
 
     &__soc-media
       top: 245px
-      left: 30%
+      left: 50%
+      margin-left: -146px
+ 
 
+@media all and (max-width : 568px)
+
+  .header-info__uber 
+    font-size: 29px
+
+  .header-info__welcom 
+    font-size: 18px
+
+  .header-info__button 
+    width: 200px
+
+  .main-mobile
+    padding-top: 60px
+
+  .main-choice 
+    &__bottom-info 
+      top: -100px
+   
 
 @media all and (max-width : 480px)
 
@@ -785,9 +802,14 @@ main
       height: 300px
     &__bottom-text 
       color: #fff
-      font-size: 16px  
+      font-size: 23px
+      font-weight: 200
+      
     &__bottom-info 
-      top: 16px
+      top: 80px
+     
+
+   
   
   .footer-nav
     &__list-item
@@ -795,12 +817,16 @@ main
    
     &__soc-main
       top: 200px
-      left: 33%
+      left: 50%
+      margin-left: -75px
    
 
     &__soc-media
       top: 250px
-      left: 18%
+      left: 50%
+      margin-left: -146px
+ 
   .footer-list
      &__link
-      font-size: 7px
+      font-size: 5px
+
